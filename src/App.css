@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+*{
+  background-color: lightgrey;
+  margin: 3px;
+}
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +39,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+.card{
+  background-color: white !important;
+}
+.button_flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+padding: 5px;
+align-items: center;
 }

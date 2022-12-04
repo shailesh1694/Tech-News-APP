@@ -1,25 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Stories from './Components/Stories';
+import { useGetdata } from "./Components/Contex";
+import React from 'react';
+import Search from './Components/Search';
+import Pagination from './Components/Pagination';
+
 
 function App() {
+
+
+  // console.log(variable)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>|Tech News|</h1>
+      <br />
+      <Search />
+      <br />
+      <Pagination />
+      <Stories />
     </div>
-  );
+);
 }
-
 export default App;
+
+
+
